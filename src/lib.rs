@@ -65,7 +65,7 @@ pub fn run(cli: Cli) -> Result<()> {
                     }
                 },
                 (Some(f), Some(t)) => {
-                    println!(
+                    panic!(
                         "Error: [ERROR] Tidak dapat mengonversi satuan yang berbeda kategori: [panjang] {} → [suhu] {}",
                         f.name(),
                         t.name()
